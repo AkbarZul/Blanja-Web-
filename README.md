@@ -30,4 +30,4 @@ Blanja-Web adalah sebuah web e-commerce dimana customer bisa membeli barang yang
 ![Screenshot from 2021-02-15 22-25-54](https://user-images.githubusercontent.com/67698809/108480782-f5a29d00-72c9-11eb-8f79-d8338beddc36.png)
 
 ## Repository Backend
-# [ClickHere](https://github.com/AkbarZul/BlanjaAPI)
+* [ClickHere](https://github.com/AkbarZul/BlanjaAPI)
