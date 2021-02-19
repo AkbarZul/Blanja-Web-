@@ -98,7 +98,7 @@ const Register = ({ changeToLogin }) => {
                 ...values,
                 level_id: role,
               };
-              console.log(data);
+              // console.log(data);
               dispatch(authRegisterCreator(data));
               resetForm({ values: "" });
               onclick={changeToLogin}

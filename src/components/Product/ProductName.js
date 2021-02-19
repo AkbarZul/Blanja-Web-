@@ -28,13 +28,13 @@ const ProductName = (props) => {
   const [jumlah, setJumlah] = useState(1);
   const [sizes, setSizes] = useState(0);
   const [warna, setWarna] = useState("");
-  console.log("color", warna);
-  console.log("jumlah", jumlah);
-  console.log("sizes", sizes);
-  console.log("ID", id);
-  console.log("ID_SELLER", seller_id);
-  console.log("ini props", props);
-  console.log("ini addtocart", addToCart);
+  // console.log("color", warna);
+  // console.log("jumlah", jumlah);
+  // console.log("sizes", sizes);
+  // console.log("ID", id);
+  // console.log("ID_SELLER", seller_id);
+  // console.log("ini props", props);
+  // console.log("ini addtocart", addToCart);
 
   const history = useHistory();
 
@@ -60,7 +60,7 @@ const ProductName = (props) => {
     return item.id === id;
   });
 
-  console.log("INDEX", size[sizes]);
+  // console.log("INDEX", size[sizes]);
 
   return (
     <div>
@@ -176,7 +176,14 @@ const ProductName = (props) => {
             </div>
             <div className="row">
               <div className="col-12 col-sm-3 mt-2">
+              <Link
+                  to={{
+                    pathname: "/chat",
+                    seller_id,
+                  }}
+                >
                 <button className="chat rounded-pill">Chat</button>
+                </Link>
               </div>
               <div className="col-12 col-sm-3 mt-2">
                 {index >= 0 ? (

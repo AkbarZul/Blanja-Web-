@@ -16,7 +16,7 @@ const NewData = () => {
         // const image = data.data[0].product_photo
         // const images = JSON.parse(image)
         // setImg(images);
-        console.log("products", newProduct);
+        // console.log("products", newProduct);
         setProducts(newProduct);
       })
       .catch((err) => {

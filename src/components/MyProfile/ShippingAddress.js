@@ -9,7 +9,6 @@ import { Jumbotron } from "react-bootstrap";
 import ModalChooseAddress from "../Modal/ModalAddress/ModalAddAddress";
 
 export default function ShippingAddress() {
-  const [spinner, setSpinner] = useState(true);
   const [showChooseAddress, setShowChooseAddress] = useState(false);
   const [changeAddress, setChangeAddress] = useState([]);
 

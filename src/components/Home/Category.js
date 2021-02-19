@@ -14,7 +14,7 @@ const Category = () => {
       .then((res) => {
         const categories = res.data.data;
         setCategory(categories);
-        console.log("testing cat", categories);
+        // console.log("testing cat", categories);
       })
       .catch((err) => {
         console.log(err);

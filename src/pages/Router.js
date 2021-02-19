@@ -26,35 +26,31 @@ import Register from "../components/Login/Register";
 import OtpConfrim from "../components/Login/OtpConfrim";
 import KonfirmasiPassword from "../components/Login/KonfirmasiPassword";
 import Auth from "./Auth";
+import Chat from "../components/Chat/Chat";
 
 export default function Router() {
   return (
     <BrowserRouter>
-      <Route path="/" exact component={Home} />
+     <Route path="/" exact component={Home} />
       <RoutePrivate path="/products/:id" component={Product} />
-      {/* <Route path="/mybag" component={Mybag} /> */}
       <PrivateRouter path="/mybag" component={Mybag} />
-      <Route path="/checkout" component={Checkout} />
+      <PrivateRouter path="/checkout" component={Checkout} />
+      <PrivateRouter path="/profile" component={MyProfile} />
+      <PrivateRouter path="/inputProduct" component={AddProduct} />
+      <PrivateRouter path="/edit/:id" component={EditProduct} />
+      <PrivateRouter path="/myproduct" component={GetProduct} />
+      <PrivateRouter path="/shippingAddress" component={ShippingAddress} />
+      <PrivateRouter path="/myorder" component={GetOrder} />
+      <PrivateRouter path="/update" component={Update} />
+      <PrivateRouter path="/chat" component={Chat} />
       <Route path="/category/:id_categories" component={SortCategory} />
       <Route path="/search" component={Search} />
       <Route path="/filter" component={Filter} />
-
-      <Route path="/inputProduct" component={AddProduct} />
-      <Route path="/edit/:id" component={EditProduct} />
       <Route path="/login" component={Auth} />
       <Route path="/otp" component={OtpConfrim} />
       <Route path="/confrim" component={KonfirmasiPassword} />
       <Route path="/register" component={Register} />
-      <Route path="/myproduct" component={GetProduct} />
-      <Route path="/myorder" component={GetOrder} />
       <Route path="/change" component={ChangePassword} />
-      <Route path="/shippingAddress" component={ShippingAddress} />
-
-      {/* <Route path="/register" component={Auth} />
-      <Route path="/konfirmasi" component={Auth} /> */}
-      {/* <Route path="/reset" component={ResetPassword} /> */}
-      <Route path="/update" component={Update} />
-      <Route path="/profile" component={MyProfile} />
     </BrowserRouter>
   );
 }

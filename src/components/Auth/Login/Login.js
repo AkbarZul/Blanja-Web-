@@ -10,7 +10,7 @@ const Login = ({ changeToRegister, changeToReset }) => {
   const dispatch = useDispatch();
   const msgInvalid = useSelector((state) => state.auth.msgInvalid);
 
-  console.log("test invalid", msgInvalid);
+  // console.log("test invalid", msgInvalid);
 
   const [role, setRole] = useState(1);
 

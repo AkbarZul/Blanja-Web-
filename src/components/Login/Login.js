@@ -10,7 +10,7 @@ import "../../assets/style/login.css";
 const Login = ({ changeToRegister, changeToReset }) => {
   const dispatch = useDispatch();
   const msgInvalid = useSelector((state) => state.auth.msgInvalid);
-  console.log("pesan : ", msgInvalid);
+  // console.log("pesan : ", msgInvalid);
 
   const [role, setRole] = useState(2);
 
