@@ -98,7 +98,6 @@ const Register = ({ changeToLogin }) => {
                 ...values,
                 level_id: role,
               };
-              // console.log(data);
               dispatch(authRegisterCreator(data));
               resetForm({ values: "" });
               onclick={changeToLogin}
@@ -110,7 +109,6 @@ const Register = ({ changeToLogin }) => {
                 full_name: values.full_name,
                 level_id: role,
               };
-              console.log(data);
               dispatch(authRegisterCreator(data));
               resetForm({ values: "" });
               onclick={changeToLogin}

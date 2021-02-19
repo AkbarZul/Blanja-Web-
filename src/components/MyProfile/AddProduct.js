@@ -77,8 +77,6 @@ const AddProduct = () => {
   const [cnd, setCnd] = useState(1);
   const [sts, setSts] = useState(0);
 
-  console.log("Size Luar", size);
-  console.log("color Luar", color);
 
   const token = useSelector((state) => state.auth.data.token);
 
@@ -94,7 +92,6 @@ const AddProduct = () => {
 
   const formatDataColorToSend = (dataColor) => {
     const selectedColors = [];
-    console.log("SELECT", selectedColors);
     dataColor.forEach((c) => {
       if (c.is_selected) {
         selectedColors.push(c.id);

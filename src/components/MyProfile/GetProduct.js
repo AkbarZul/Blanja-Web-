@@ -63,8 +63,6 @@ const GetProduct = (props) => {
           draggable: true,
           transition: Bounce,
         });
-        // setAddP(true)
-        console.log("berhasil delete", res);
         getProducts();
       })
       .catch((err) => {

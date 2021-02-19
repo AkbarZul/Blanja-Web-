@@ -16,8 +16,6 @@ const KonfirmasiPassword = ({ changeToRegister }) => {
     Axios.patch(api, { email: email, password: password })
       .then((data) => {
         setIsConfrim(true);
-        // console.log("reset password done", data);
-        //   redirect.push("/login")
       })
       .catch((err) => console.log(err));
   };

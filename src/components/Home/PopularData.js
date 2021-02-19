@@ -14,7 +14,6 @@ const PopularData = () => {
       .get(`${getUrl}/products?limit=15&keyword=rating DESC`)
       .then((res) => {
         const newProduct = res.data.data.products;
-        // console.log("products", newProduct);
         setProducts(newProduct);
       })
       .catch((err) => {

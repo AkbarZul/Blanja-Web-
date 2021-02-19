@@ -16,8 +16,6 @@ const OtpConfrim = ({ changeToRegister }) => {
     Axios.post(api, { email: email, otp: otp })
       .then((data) => {
         setIsConfrim(true);
-        // console.log("OTP done", data);
-        //   redirect.push("/login")
       })
       .catch((err) => console.log(err));
   };

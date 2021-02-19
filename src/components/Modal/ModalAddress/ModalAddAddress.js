@@ -53,7 +53,6 @@ export default function ModalAddAddress(props) {
         } else if (res.data.status === 500) {
           props.onHide();
         }
-        console.log("success", res.data);
       })
       .catch((err) => {
         console.log(err);

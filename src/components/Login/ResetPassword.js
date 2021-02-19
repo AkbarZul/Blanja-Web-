@@ -15,8 +15,6 @@ const ResetPassword = ({ changeToRegister }) => {
     Axios.post(api, { email: email })
       .then((data) => {
         setIsReset(true);
-        console.log("forgot done", data);
-        //   redirect.push("/login")
       })
       .catch((err) => console.log(err));
   };

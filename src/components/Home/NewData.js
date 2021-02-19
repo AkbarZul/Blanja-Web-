@@ -13,10 +13,6 @@ const NewData = () => {
       .get(`${getUrl}/products?limit=15&keyword=created_at DESC`)
       .then((res) => {
         const newProduct = res.data.data.products;
-        // const image = data.data[0].product_photo
-        // const images = JSON.parse(image)
-        // setImg(images);
-        // console.log("products", newProduct);
         setProducts(newProduct);
       })
       .catch((err) => {

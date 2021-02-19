@@ -59,7 +59,6 @@ const Navbar = ({ changeToLogin, changeToRegister, props }) => {
       .then((res) => {
         const getSize = res.data.data;
         const sizeName = res.data.data.size;
-        // console.log("kolor size", getSize);
         setSizeName(sizeName);
         setListSize(getSize);
       })
@@ -74,8 +73,6 @@ const Navbar = ({ changeToLogin, changeToRegister, props }) => {
       .then((res) => {
         const getColor = res.data.data;
         const colorName = res.data.data.color_name;
-        // console.log("nama warna", colorName);
-        // console.log("kolor", getColor);
         setColorName(colorName);
         setListColor(getColor);
       })
@@ -94,7 +91,6 @@ const Navbar = ({ changeToLogin, changeToRegister, props }) => {
       .then(async (res) => {
         dispatch(authLogOutCreator());
         setIsLogout(true);
-        // console.log("done");
       })
       .catch((err) => {
         console.log(err);
