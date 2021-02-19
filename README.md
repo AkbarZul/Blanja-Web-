@@ -1,38 +1,20 @@
-# BlanjaWEB With React
+# Blanja-Web
 
 ## About the project
 
-Project membuat front-end blanja web menggunakan React dan database MYSQL.
+Blanja-Web adalah sebuah web e-commerce dimana customer bisa membeli barang yang dicari dan seller bisa menjual barang. Blanja-Web ini dibuat untuk memudahkan seller dan customer dalam bertransaksi. Dibuat dengan framework javascript yaitu React Js untuk frontend, ExpressJs untuk backend, dan MYSQL untuk database.
 
 ## Build with Project
 * [ReactJS](https://reactjs.org/)
 * [MYSQL](https://www.mysql.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Node js](https://nodejs.org/en/)
+* [React Bootstrap](https://react-bootstrap.github.io/)
 
-## Getting Started
-Berikut panduan untuk menjalankan project ini secara lokal
-### How to install
+## How to install
+* Buka terminal atau command prompt
+* Clone Repository https://github.com/AkbarZul/Blanja-Web-
+* Buka folder dan tulis yarn atau npm install untuk install dependencies
+* tulis yarn start atau npm start
 
-* Clone Repository
-    ```sh
-    https://github.com/Shhb0420/RESTful-API-blanja-app-using-ExpressJs
-    ```
-* ReactJS
-    ```sh
-    npm i react
-    ```
-* MYSQL
-    ```sh
-    npm i mysql
-    ```
-## Endpoint
-
-* /product/:id
-* /mybag
-* /checkout
-* /category
-* /inputProduct
-* /login
-* /register
-* /konfirmasi
-* /reset-password
-* /update
+## Screenshots
