@@ -1,5 +1,4 @@
 import Axios from "axios";
-// import { toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const API = process.env.REACT_APP_URL;

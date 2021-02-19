@@ -245,15 +245,11 @@ const ProductName = (props) => {
         <p className="desc">{desc}</p>
         <p className="informasi">Product review</p>
         <div className="d-flex">
-          <p className="rate">5.0</p>
+          <p className="rate">{rating}</p>
           <p className="five">/5</p>
         </div>
         <div className="star">
-          <i className="fas fa-star text-warning"></i>
-          <i className="fas fa-star text-warning"></i>
-          <i className="fas fa-star text-warning"></i>
-          <i className="fas fa-star text-warning"></i>
-          <i className="fas fa-star text-warning"></i>
+          <Rating product_rating={rating} />
         </div>
         <div>
           <hr />

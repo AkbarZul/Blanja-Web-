@@ -7,10 +7,9 @@ import { API } from "../../utility/Auth";
 import Sidebar from "../SidebarProfile/Sidebar";
 import { Jumbotron } from "react-bootstrap";
 import ModalChooseAddress from "../Modal/ModalAddress/ModalAddAddress";
-import Loader from "../Loader/Loader";
-import classname from "../../helpers/classJoiner";
 
 export default function ShippingAddress() {
+  const [spinner, setSpinner] = useState(true);
   const [showChooseAddress, setShowChooseAddress] = useState(false);
   const [changeAddress, setChangeAddress] = useState([]);
 
@@ -42,10 +41,6 @@ export default function ShippingAddress() {
         console.log(err);
       });
   };
-
-  if (!changeAddress.length) {
-    return <Loader />;
-  }
 
   return (
     <>

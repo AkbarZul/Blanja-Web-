@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
 import * as yup from "yup";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { authRegisterCreator } from "../../redux/actions/auth";
 import { Logo } from "../../assets/style/index";
 import { useHistory } from "react-router-dom";
@@ -9,7 +9,7 @@ import "../../assets/style/login.css";
 
 const Register = ({ changeToLogin }) => {
   const dispatch = useDispatch();
-  // const auth = useSelector(state => state.auth)
+  
   
   const history = useHistory();
   const [role, setRole] = useState(1);
@@ -20,8 +20,6 @@ const Register = ({ changeToLogin }) => {
       username: yup.string().required(),
       full_name: yup.string().required(),
       email: yup.string().required().email(),
-      // phone_number: yup.number().required(),
-      // store_name: yup.string().required(),
       password: yup
         .string()
         .required()
@@ -92,8 +90,6 @@ const Register = ({ changeToLogin }) => {
             email: "",
             password: "",
             full_name: "",
-            // phone_number: "",
-            // store_name: "",
           }}
           validationSchema={reviewSchema}
           onSubmit={(values, { resetForm }) => {
@@ -105,7 +101,6 @@ const Register = ({ changeToLogin }) => {
               console.log(data);
               dispatch(authRegisterCreator(data));
               resetForm({ values: "" });
-              // history.push({changeToLogin})
               onclick={changeToLogin}
             } else {
               const data = {
@@ -118,8 +113,6 @@ const Register = ({ changeToLogin }) => {
               console.log(data);
               dispatch(authRegisterCreator(data));
               resetForm({ values: "" });
-              // history.push({changeToLogin})
-              // changeToLogin()
               onclick={changeToLogin}
             }
           }}
@@ -193,36 +186,6 @@ const Register = ({ changeToLogin }) => {
                     {props.touched.email && props.errors.email}
                   </p>
                 </div>
-                {/* {role === 2 ?
-                  <>
-                    <input
-                      type="text"
-                      name="phone-number"
-                      id="phone-number"
-                      placeholder="Phone number"
-                      onChange={props.handleChange}
-                      onBlur={props.handleBlur}
-                      value={props.values.phone_number}
-                    />
-                    <p className="text-red">
-                      {props.touched.phone_number && props.errors.phone_number}
-                    </p>
-                    <br />
-                    <input
-                      type="text"
-                      name="store-name"
-                      id="store-name"
-                      placeholder="Store name"
-                      onChange={props.handleChange}
-                      onBlur={props.handleBlur}
-                      value={props.values.store_name}
-                    />
-                    <p className="text-red">
-                      {props.touched.store_name && props.errors.store_name}
-                    </p>
-                    <br />
-                  </>
-                 : null} */}
                 <div className="col-md-12 d-flex justify-content-center align-items-center mt-2">
                   <input
                     type="password"
@@ -240,25 +203,11 @@ const Register = ({ changeToLogin }) => {
                     {props.touched.password && props.errors.password}
                   </p>
                 </div>
-                {/* <button
-                  type="button"
-                  className="btn-primary"
-                  
-                  style={{
-                    backgroundColor: "rgba(219, 48, 34, 1)",
-                    border: "2px solid rgba(219, 48, 34, 1)",
-                  }}
-                >
-                  Register
-                </button> */}
               </form>
               <div className="col-md-12 d-flex justify-content-center align-items-center mt-3">
                 <button
                   type="button"
                   className="btn-submit"
-                  // onClick={props.handleSubmit}
-                  // onClick={changeToLogin}
-                  // onClick={() => { props.handleSubmit && changeToLogin}}
                   onClick={() => {
                     props.handleSubmit();
                     changeToLogin();
