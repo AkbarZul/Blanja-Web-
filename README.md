@@ -18,3 +18,4 @@ Blanja-Web adalah sebuah web e-commerce dimana customer bisa membeli barang yang
 * tulis yarn start atau npm start
 
 ## Screenshots
+![screenshot-localhost_3000-2021 02 19-15_40_54](https://user-images.githubusercontent.com/67698809/108480211-3fd74e80-72c9-11eb-8dcf-b2d09255d897.png)
