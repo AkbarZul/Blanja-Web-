@@ -14,8 +14,8 @@ Blanja-Web adalah sebuah web e-commerce dimana customer bisa membeli barang yang
 ## How to install
 * Buka terminal atau command prompt
 * Clone Repository https://github.com/AkbarZul/Blanja-Web-
-* Buka folder dan tulis yarn atau npm install untuk install dependencies
-* tulis yarn start atau npm start
+* Buka folder dan tulis `yarn` atau `npm install` untuk install dependencies
+* tulis `yarn start` atau `npm start`
 
 ## Screenshots
 * Home
